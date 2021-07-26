@@ -90,6 +90,7 @@ const App = () =>
             <table className="table table-striped table-bordered">
                 <thead className="thead-dark">
                    <tr>
+                        <td> S.No <td>
                         <td>First Name</td>
                         <td>Last Name</td>
                         <td>Email</td>
@@ -98,10 +99,11 @@ const App = () =>
                     </tr>
                 </thead>
                 <tbody className="table-hover">
-                    {details.map(data=>
+                    {details.map(data,index =>
                         {
                             return (
                                     <tr>
+                                        <td>{index+1}</td>
                                         <td>{data.fname}</td>
                                         <td>{data.lname}</td>
                                         <td>{data.email}</td>
